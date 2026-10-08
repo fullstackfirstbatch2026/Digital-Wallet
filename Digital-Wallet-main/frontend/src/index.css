@@ -1,0 +1,24 @@
+body { background: #f4f6fb; }
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #1f2a44;
+  color: #fff;
+  flex-shrink: 0;
+}
+.sidebar .brand { font-size: 1.2rem; font-weight: 700; padding: 1.2rem 1rem; border-bottom: 1px solid rgba(255,255,255,.1); }
+.sidebar .nav-link { color: #c5cde0; padding: .7rem 1rem; border-radius: 8px; margin: 2px 8px; }
+.sidebar .nav-link:hover { background: rgba(255,255,255,.08); color: #fff; }
+.sidebar .nav-link.active { background: #3d5afe; color: #fff; }
+
+.content-area { flex-grow: 1; min-width: 0; }
+.stat-card { border: 0; border-left: 5px solid #3d5afe; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.stat-card .value { font-size: 1.9rem; font-weight: 700; }
+.card { border: 0; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.table thead th { background: #eef1f9; white-space: nowrap; }
+
+@media (max-width: 767px) {
+  .sidebar { position: fixed; z-index: 1040; left: -260px; transition: left .2s; }
+  .sidebar.open { left: 0; }
+}
