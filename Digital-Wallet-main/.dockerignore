@@ -1,0 +1,11 @@
+**/node_modules/
+**/dist/
+**/target/
+.git
+.gitignore
+.env
+.env.*
+frontend/.env
+frontend/.env.local
+**/.DS_Store
+**/*.log

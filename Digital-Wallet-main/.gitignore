@@ -1,0 +1,17 @@
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Java / backend
+backend/target/
+
+# Environment files
+.env
+.env.local
+frontend/.env
+frontend/.env.local
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.log
